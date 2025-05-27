@@ -9,7 +9,19 @@
         <meta name="author" content="" />
         <!-- Title Of Site -->
         <title>Tamir Gluska | Bio</title>
-
+        <style>
+            .logo .logo-img {
+              display: none;
+            }
+          
+            .site-header.scrolled .logo a:first-child {
+              display: none;
+            }
+          
+            .site-header.scrolled .logo .logo-img {
+              display: inline-block;
+            }
+          </style>
         
         
         <!-- Favicon -->
@@ -392,7 +404,16 @@
         <!-- *********** JS Files *********** -->  
             <!-- logo -->
 
-
+            <script>
+                window.addEventListener("scroll", function () {
+                  const header = document.getElementById("header");
+                  if (window.scrollY > 50) {
+                    header.classList.add("scrolled");
+                  } else {
+                    header.classList.remove("scrolled");
+                  }
+                });
+              </script>
         <!-- Plugin JS  -->
         <script src="assets/js/plugins.js"></script>
 
