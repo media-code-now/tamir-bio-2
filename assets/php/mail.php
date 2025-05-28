@@ -8,8 +8,8 @@ $Subject = $_POST["subject"];
 $Message = $_POST["message"];
 
 /* Email to Admin */
-$to = "isolatedesigns@gmail.com";
-$subject = 'Shivam - Contact Us';
+$to = "noam@gluskainc.com";
+$subject = 'Tamir Bio - Contact Us';
 
 $message .= "<strong>Name</strong>: " . $Name . "<br>";
 $message .= "<strong>Email</strong>: " . $Email . "<br>";
@@ -17,7 +17,7 @@ $message .= "<strong>Subject</strong>: " . $Subject . "<br>";
 $message .= "<strong>Message</strong>: " . $Message . "<br>";
 
 //$header = "From:" . $Email."\r\n";
-$header = "From: isolatedesigns@gmail.com\r\n";
+$header = "From: noam@gluskainc.com\r\n";
 $header .= "Reply-To:" . $Email . "\r\n";
 $header .= "Return-Path:" . $Email . "\r\n";
 $header .= "MIME-Version: 1.0\r\n";
